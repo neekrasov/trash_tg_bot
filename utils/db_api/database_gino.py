@@ -11,7 +11,6 @@ from data import config
 db = Gino()
 
 
-
 class BaseModel(db.Model):
     __abstract__ = True
 
@@ -39,7 +38,6 @@ class TimedBaseModel(BaseModel):
     )
 
 
-async def on_startup(dp: Dispatcher):
+async def on_startup(dp):
     logger.info("Setup PostgreSQL Connection")
     await db.set_bind(config.POSTGRES_URI)
-

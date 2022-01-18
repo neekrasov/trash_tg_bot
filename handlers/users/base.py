@@ -5,7 +5,7 @@ from aiogram.dispatcher.filters.builtin import CommandStart, CommandHelp
 from filters.private import IsPrivate
 from keyboards.inline.start_keyboard import start_button
 from loader import dp
-from utils.db_api import quick_commands as db
+from utils.db_api import db_commands as db
 from utils.misc import rate_limit
 
 

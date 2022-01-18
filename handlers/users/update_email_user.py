@@ -4,7 +4,7 @@ from aiogram.dispatcher.filters import Command
 
 from keyboards.inline.set_email import cancel_email
 from loader import dp
-from utils.db_api import quick_commands as db
+from utils.db_api import db_commands as db
 
 
 @dp.message_handler(Command("update_email"))

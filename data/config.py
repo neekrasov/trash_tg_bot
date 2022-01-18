@@ -9,7 +9,6 @@ IP = env.str("ip")
 PGUSER = env.str("PGUSER")
 PGPASSWORD = env.str("PGPASSWORD")
 DATABASE = env.str("DATABASE")
-# DATABASE = env.str("DADABASE") # если нзвание таблицы не по умолчанию
 
 
 aiogram_redis = {
